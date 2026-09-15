@@ -1,0 +1,19 @@
+{
+  "name": "travel-scout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An agentic CLI that hunts for cheap flights and hotels using Claude + the Amadeus API",
+  "scripts": {
+    "chat": "node --env-file-if-exists=.env --import tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
